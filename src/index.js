@@ -8,7 +8,7 @@ class App extends React.Component {
             <h1>
                 Hello React!!
 
-                <Button/>
+                <Button title="teste" descricao="bla bla">Update</Button>
             </h1>
         );
     }

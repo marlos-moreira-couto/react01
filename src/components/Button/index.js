@@ -3,7 +3,10 @@ import React, {Component} from "react";
 class Button extends Component{
     render() {
         return (
-          <button>Salvar</button>
+          <div>
+              <div>{this.props.title} - {this.props.descricao}</div>
+              <button>{this.props.children}</button>
+          </div>
         );
     }
 }
