@@ -13,8 +13,8 @@ Execução:
 
 Branches roteiro aulas:
 
-- Configuraçaão do ambiente - Branch Aula02
-- Componentes - Branch Aula03
-- Props & Children - Branch Aula04
+- Configuraçaão do ambiente - Branch aula02
+- Componentes - Branch aula03
+- Props & Children - Branch aula04
 
 
