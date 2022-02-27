@@ -2,12 +2,16 @@
 
 Curso Udemy ReactJs Aprendendo Rápido
 
-- Rodar o projeto<BR/>
-Primeira vez:<BR/>
-npm run build<BR/>
-Depois apenas:<BR/>
-npm run dev
+Primeiro build:
 
+- npm run build
+
+Execução:
+
+- npm run dev
+
+
+Branches roteiro aulas:
 
 - Configuraçaão do ambiente - Branch Aula02
 - Componentes - Branch Aula03
