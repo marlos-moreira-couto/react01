@@ -3,12 +3,29 @@ import { render } from 'react-dom';
 import Button from "./components/Button";
 
 class App extends React.Component {
+    state = {
+        contador:0,
+        nome:""
+    }
+    adicionar = () => {
+        this.setState({
+            contador:this.state.contador+1
+        });
+    }
+    chandeText = (e) => {
+        this.setState({
+            nome:e.target.value
+        });
+    }
     render() {
+        console.log("render");
         return (
             <h1>
-                Hello React!!
+                <input onChange={this.chandeText}/>
+                <div>Nome: {this.state.nome}</div>
+                <div>Contador: {this.state.contador}</div>
 
-                <Button descricao="bla bla">Update</Button>
+                <Button descricao="bla bla" press={this.adicionar}>Update</Button>
             </h1>
         );
     }
