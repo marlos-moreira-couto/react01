@@ -7,6 +7,13 @@ class App extends React.Component {
         contador:0,
         nome:""
     }
+    componentWillMount() {
+        console.log("componentWillMount")
+    }
+    componentDidMount() {
+        console.log("componentDidMount")
+    }
+
     adicionar = () => {
         this.setState({
             contador:this.state.contador+1

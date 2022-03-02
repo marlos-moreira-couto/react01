@@ -1,24 +1,13 @@
-import React, {Component} from "react";
-import PropType from "prop-types";
+import React from "react";
 
-class Button extends Component{
-    static  defaultProps = {
-      descricao:""
-    };
+const Button = (props) => {
+    return (
+        <div>
+            <div>{props.title} - {props.descricao}</div>
+            <button onClick={props.press}>{props.children}</button>
+        </div>
+    );
 
-    static propType = {
-        title: PropType.string.isRequired,
-        descricao: PropType.string
-    };
-
-    render() {
-        return (
-          <div>
-              <div>{this.props.title} - {this.props.descricao}</div>
-              <button onClick={this.props.press}>{this.props.children}</button>
-          </div>
-        );
-    }
 }
 
 export default Button;
